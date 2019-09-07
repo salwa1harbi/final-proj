@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="./css/main.css"> -->
+<link rel="stylesheet" href="./css/slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="./img/logo@4x.png" width="90" height="60" class="d-inline-block align-top" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+<section id="test">
+  
+<div class="slidecontainer"> <!-- contant all the parts -->
+    <div class="test-one"><!-- test part one  -->
+<!-- card bootstrap -->
+        <div class="card" style="width: 36%;">
+            <img src="./img/architect-architecture-artist-268362.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                  <div class="part1">
+
+                      <!-- Health slider -->
+                      <div class="range-Health">
+                        <p>Health </p>
+                      <input type="range" min="1" max="10" value="5" class="slider" id="Range-Health"><span id="demo-Health"></span>
+                    </div>
+
+                    <!-- development slider -->
+                    <div class="range-development">
+                        <p>Development</p>
+                      <input type="range" min="1" max="10" value="5" class="slider" id="Range-development">  <span id="demo-development"></span>
+                    </div>
+
+                    <!-- recreation slider -->
+                    <div class="range-recreation">
+                    <p>Recreation</p>
+                      <input type="range" min="1" max="10" value="5" class="slider" id="Range-recreation">  <span id="demo-recreation"></span>
+                    </div>
+
+
+                    <!-- family slider -->
+                    <div class="range-family">
+                        <p>Family & frindes</p>
+                          <input type="range" min="1" max="10" value="5" class="slider" id="Range-family">  <span id="demo-family"></span>
+                     </div>
+                    </p>
+                    <!-- button for next part -->
+                    <button type="button" class="btn btn-dark btn-lg btn-block" id="next-bnt">NEXT</button>
+                    </div>
+           
+    
+            </div> 
+    </div> <!--  end card bootstrap  -->
+  </div><!-- end test part one  -->
+
+  <div class="test-two"><!--  test part two  -->
+    <div class="card" style="width: 36%;"><!--card bootstrap  -->
+
+      <img src="./img/architect-architecture-artist-268362.jpg" class="card-img-top" alt="...">
+      
+      <div class="card-body">
+                 <h5 class="card-title">Card title</h5>
+                 <p class="card-text">   
+                  <div class="part2">
+
+                     <!-- Business slider -->
+                   <div class="range-Business">
+                       <p>Business</p>
+                     <input type="range" min="1" max="10" value="5" class="slider" id="Range-Business">  <span id="demo-Business"></span>
+                   </div>
+
+                    <!-- religion slider -->
+                   <div class="range-religion">
+                       <p>Religion</p>
+                     <input type="range" min="1" max="10" value="5" class="slider" id="Range-religion">  <span id="demo-religion"></span>
+                   </div>
+
+                    <!-- contribution slider -->
+                   <div class="range-contribution">
+                   <p>Contribution</p>
+                     <input type="range" min="1" max="10" value="5" class="slider" id="Range-contribution">  <span id="demo-contribution"></span>
+                   </div>
+
+                    <!-- finance slider -->
+                   <div class="range-finance">
+                       <p>Finance</p>
+                         <input type="range" min="1" max="10" value="5" class="slider" id="Range-finance">  <span id="demo-finance"></span>
+                    </div>
+                    
+                  </div>
+                 </p>
+                 <button type="button" class="btn btn-dark btn-lg btn-block" id="finsh-bnt">finshed</button>
+       </div> <!-- end card body -->
+    </div><!--  end card bootstrap  -->
+</div><!-- end test part two  -->
+</div>
+                      
+</section> 
+
+<div class="container">
+    <canvas id="polar-chart" width="800" height="450"></canvas>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/slider.js"></script>
+
+</body>
+
+</html>
